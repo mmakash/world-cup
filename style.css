@@ -1,3 +1,12 @@
-h1{
-    color: red;
+.header-section{
+    background-color: black;
+}
+.section-title{
+    color: white;
+    font-size: 70px;
+    font-weight: 700px;
+}
+.title-author{
+    font-size: 16px;
+    color: white;
 }

@@ -1,5 +1,19 @@
+/* goggle font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* first section */
 .header-section{
     background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 30px 50px;
+    border-radius: 10px;
+}
+.text-section{
+    margin-left: 7%;
 }
 .section-title{
     color: white;
@@ -9,4 +23,289 @@
 .title-author{
     font-size: 16px;
     color: white;
+}
+.watch-btn{
+    background-color: red;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: white;
+}
+.photo{
+    width: 581px;
+    height: 613px;
+}
+/* blog section */
+.middle-section{
+    display: flex;
+    padding: 20px;
+}
+.btn-section{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 312px;
+    height: 312px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.btn-section a{
+    text-decoration: none;
+}
+.match-btn,.group-btn{
+    width: 174px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.blog-btn{
+    width: 174px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:10px;
+}
+.blogs{
+    padding: 10px;
+}
+.blog{
+    padding: 20px;
+    border: 1px solid rgb(211, 211, 204);
+    border-radius: 5px;
+}
+.thumbnail{
+    width: 312px;
+    height: 190px;
+}
+.blog-info{
+    justify-content: space-around;
+}
+.blog-author{
+    font-size: 18px;
+}
+.transfer-btn{
+    font-size: small;
+    padding: 3px 10px;
+}
+.blog-info{
+    display: flex;
+}
+/* match info */
+.teams{
+    width: 312px;
+    height: 242px;
+}
+.team-image{
+    width: 93.4px;
+    height: 54.42px;
+}
+.second-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5px;
+    margin-left: 10px;
+}
+.oponent{
+    display: flex;
+}
+.team-heading{
+    color: black;
+    font-size: 20;
+    font-weight: 600;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* footer section */
+footer{
+    background-color: black;
+    height: 444px;
+    padding-top: 210px;
+}
+footer h1{
+    color: white;
+    text-align: center;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+}
+footer ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+.social-icon{
+    text-align: center;
+}
+/* media quaries small device */
+@media screen and (max-width: 767px) {
+    .header-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 500px;
+        width: 334px;
+
+    }
+    .section-title{
+        font-size: 22px;
+        font-weight: 500;
+        width: 228px;
+        height: 66px;
+        text-align: center;
+    }
+    .title-author{
+        width: 258px;
+        height: 48px;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .watch-btn{
+        height: 40px;
+        width: 161px;
+        margin-top: 60px;
+        text-align: center;
+        margin-left: 45px;
+    }
+    .photo{
+        width: 223px;
+        height: 235px;
+        text-align: center;
+        margin-left: 65px;
+    }
+    .middle-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .btn-section{
+        width: 210px;
+        height: 176px;
+        margin-left: 75px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .thumbnail{
+        width: 100%;
+    }
+    footer{
+        height: 412px;
+    }
+    footer ul{
+        display: block;
+        text-align: center;
+    }
+    footer ul li{
+        margin: 10px;
+    }
+    footer h1{
+        margin-left: 15px;
+    }
+    fa-facebook{
+        color: blue;
+    }
+}
+/* media quaries tablet device */
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .header-section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 734px;
+        height: 398px;
+    }
+    .photo{
+        width: 323px;
+        height: 360px;
+        margin-top: 35px;
+    }
+    .text-section{
+        width: 316px;
+        height: 276px;
+    }
+    .section-title{
+        font-size: 40px;
+        font-weight: 700;
+        width: 289;
+        height: 150;
+    }
+    .title-author{
+        font-size: 14px;
+        font-weight: 400;
+        width: 316px;
+        height: 48px;
+    }
+    .watch-btn{
+        width: 161px;
+        height: 48px;
+        padding: 12px;
+        margin-top: 30px;
+    }
+    .middle-section{
+        flex-direction: column;
+    }
+    .btn-section{
+        flex-direction: row;
+        height: 15px;
+        margin-bottom: 40px;
+        margin-left: 180px;
+        font-size: 13px;
+        background-color: white;
+    }
+    .match-btn,.group-btn{
+        margin: 10px;
+        font-size: 13px;
+        height: 64px;
+        width: 230px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blog-btn{
+        margin: 10px;
+        font-size: 13px;
+        height: 64px;
+        width: 230px;
+    }
+
+}
+/* media quaries team section */
+@media screen and (max-width:767px) {
+    .second-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-left: 15px;
+    }
+    .btn-section{
+        margin-bottom: 25px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .second-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding-left: 15px;
+    }
 }
